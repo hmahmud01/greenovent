@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Astral Corvus</title>
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>    
+    <!-- Home Page Section -->
+    <section class="main-section">
+        <div class="admin-section-top">
+            <div>
+                <div class="uk-section-secondary uk-preserve-color">
+                    <div uk-sticky>
+                        <nav class="uk-navbar-container uk-nav-color-orange" uk-navbar="mode: click;">
+                            <div class="uk-navbar-left">
+                                <a class="uk-navbar-item uk-logo logo-size uk-text-emphasis" href="../dashboard.html">Shareng.biz</a>    
+                            </div>
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav uk-iconnav">
+                                    <li>
+                                        <a class="active uk-text-emphasis" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: user"></span> User </a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav uk-text-right">
+                                                <li class="uk-active"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Profile</a></li>
+                                                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>                              
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>        
+    </section>
+
+    <div uk-grid>
+        <div class="uk-width-1-6@s">
+            <div class="uk-card uk-card-secondary uk-card-body shareng-sidebar-left">                
+                <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                    <li class="uk-nav-header">Dashboard Navigation</li>
+                    <li><a href="../dashboard.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Dashboard</a></li>
+                    <li class="uk-parent">
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Product</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../userDashboard/buyer_main.html">Main Buyer</a></li>
+                            <li><a href="../userDashboard/brands.html">Brand</a></li>
+                            <li><a href="../userDashboard/products.html">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Users</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../userDashboard/buyer_main.html">Main Buyer</a></li>
+                            <li><a href="../userDashboard/buyer_local.html">Users</a></li>                            
+                        </ul>
+                    </li>            
+                    <li class="uk-parent">
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Admins</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../dashboard/roles.html">Roles</a></li>
+                            <li><a href="../dashboard/admin.html">Admins</a></li>                            
+                        </ul>
+                    </li>            
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="../index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
+                    <li><a href="../help.html"><span class="uk-margin-small-right" uk-icon="icon: lifesaver"></span> Help</a></li>                    
+                    <li><a href="../index.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Logout</a></li>
+                </ul>
+                <div class="uk-position-bottom uk-padding-small">                    
+                    Copyright @ Shareng.biz
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="uk-width-expand@s">
+            <div class="uk-margin uk-padding-small">
+                <h1 class="uk-heading-bullet">Brands</h1>
+                <p>Following are the Brand list registered to the system under different registered Main Buyer</p>
+                <p>To add a new Brand click <a class="uk-button uk-button-secondary uk-button-small" href="#modal-sections" uk-toggle>Add Brand</a></p>
+                <div>
+                    <table class="uk-table uk-table-justify uk-table-divider">
+                        <thead>
+                            <tr>
+                                <th class="uk-width-small">Brand Name</th>
+                                <th>Main Buyer Reference</th>
+                                <th>Added</th>
+                                <th>Operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Buttons</td>
+                                <th>adidas</th>
+                                <td>02-02-2021</td>
+                                <td><button class="uk-button uk-button-default uk-button-small" type="button">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <th>adidas</th>
+                                <td>03-02-2021</td>
+                                <td><button class="uk-button uk-button-default uk-button-small" type="button">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>Buttons</td>
+                                <th>puma</th>
+                                <td>02-02-2021</td>
+                                <td><button class="uk-button uk-button-default uk-button-small" type="button">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <th>puma</th>
+                                <td>03-02-2021</td>
+                                <td><button class="uk-button uk-button-default uk-button-small" type="button">Detail</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                   
+                
+
+                <div id="modal-sections" uk-modal>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Add Brand</h2>
+                        </div>
+                        <form class="uk-form-stacked">
+                            <div class="uk-modal-body">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-stacked-text">Brand Title</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Add A new Brand Buyer">
+                                    </div>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-stacked-select">Select</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="form-stacked-select">
+                                            <option>Adidas</option>
+                                            <option>Puma</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-modal-footer uk-text-right">
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                <button class="uk-button uk-button-primary" type="button">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+</body>
+</html>
